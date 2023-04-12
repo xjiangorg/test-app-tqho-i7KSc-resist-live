@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-msay
+  namespace: build-e2e-jhff-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:3b8144ae65ccfe2ac148cca30b3c87e6b12aafd7d6d0a58562ffd9a241aa51fc
+        name: my-python
+        resources: {}
+status: {}
